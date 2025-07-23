@@ -1,0 +1,69 @@
+html, body {
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+button {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    padding: 14px 24px;
+    margin: 15px auto;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+#toggleRecording {
+    background-color: #bbb;
+    color: #444;
+}
+
+#toggleRecording.active {
+    background-color: #32c48d;
+    color: white;
+}
+
+#toggleRecording:hover {
+    background-color: #a5a5a5;
+}
+
+#toggleRecording.active:hover {
+    background-color: #28a074;
+}
+
+#clearHistory {
+    background-color: #d33f49;
+    color: white;
+}
+
+#clearHistory:hover {
+    background-color: #b72d3c;
+}

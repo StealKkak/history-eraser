@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "History Eraser",
+    "version": "1.0",
+    "description": "History Eraser는 방문 기록 저장을 원치 않는 사용자를 위해 실시간으로 방문 기록을 자동 삭제하며, 시크릿 모드의 일부 기록 제한 문제를 보완하는 크롬 확장 프로그램입니다.",
+    "permissions": [
+        "history",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "service_worker.js"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "History Eraser"
+    }
+}
